@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Jokebook</h1>
+
+        <section class="random-section">
+            <h2>Random Joke</h2>
+            <div class="random-joke card"></div>
+            <button class="btn btn-random">Another one</button>
+        </section>
+
+        <section class="categories-section">
+            <h2>Categories</h2>
+            <button class="btn btn-load-categories">Load categories</button>
+            <ul class="category-list list"></ul>
+        </section>
+
+        <section class="search-section">
+            <h2>Search category</h2>
+            <form class="form search-form">
+                <input class="input search-input" placeholder="Ex: funnyJoke" required />
+                <input class="input search-limit" type="number" min="1" max="100" placeholder="Limit jokes" />
+                <button class="btn">Show jokes</button>
+            </form>
+        </section>
+
+        <section class="jokes-section">
+            <h2 class="jokes-title">Jokes</h2>
+            <ul class="jokes-list list"></ul>
+        </section>
+
+        <section class="add-section">
+            <h2>Add a new joke</h2>
+            <form class="form add-form">
+                <input name="category" class="input" placeholder="Category" required />
+                <input name="setup" class="input" placeholder="Setup" required />
+                <input name="delivery" class="input" placeholder="Delivery" required />
+                <button class="btn">Add</button>
+            </form>
+            <p class="add-status status"></p>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
